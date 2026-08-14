@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08</title>
+</head>
+<body>
+
+    <!-- 
+    <Form>  = Define um formulário 
+    <input> = Campo de entrada (Com vários tipos: text, password, email, number, etc...)
+    <label> = Associa um texto descritivo a um <input>
+    <textarea> = Area de texto maior.
+    <select> e <option> = Criam menus suspensos (dropdowns)
+    <button> = Botão clicável
+    <fieldset> e <legend> = Agrupam e nomeiam partes de um formulário
+    <datalist> = Lista de sugestões para <input>
+    -->
+
+    <h1>Formulário Completo</h1>
+
+    <form action="/enviar-dados" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome"
+            placeholder="Digite seu nome" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+            placeholder="seuemail@euamosenai.com.br" required><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha"
+            placeholder="Digite sua senha"
+            required><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade"
+            min="18" max="99"><br>
+
+            <label for="data-nascimento">Data Nascimento</label>
+            <input type="date" id="data-nascimento" name="data-nascimento"><br>
+
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+                <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalhes Adicionais</legend>
+
+            <label for="bio">Sobre você:</label>
+            <textarea id="bio" name="bio" rows="3"
+            placeholder="Fale um pouco de você...">
+            </textarea><br>
+            
+            <label for="linguagem">Linguagem favorita:</label>
+            <input type="text" name="linguagem" id="linguagem" list="linguagens">
+            <datalist id="linguagens">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JAVASCRIPT">
+            <option value="PYTHON">
+            <option value="JAVA">
+            </datalist><br>
+
+            <label for="contato">Contato</label>
+            <address>
+                Email: fulaninho@senailegal.com <br>
+                Telefone: (11)92345-5432
+            </address><br>
+
+        </fieldset>
+        
+        <fieldset>
+            <details>
+                <legend>Outras Informações</legend>
+                <summary>O que é um formulário HTML?</summary>
+                <p>Um formulário HTML é utilizado para coletar informações dos usuários e enviá-las para um servidor.</p>
+            </details>
+
+            <p>O campo <mark>senha</mark> precisa ter pelo menos 6 caracteres</p>
+            <label for="hora-cadastro">Horário preferido para contato:</label>
+            <input type="time" id="hora-cadastro" name="hora-cadastro">
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</body>
+</html>
