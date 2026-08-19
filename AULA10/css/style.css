@@ -1,0 +1,61 @@
+body {
+        /* Nome da cor */
+       /* background-color: red;S\ */
+
+       /* Hexadecimal */
+    /* background-color: #FF4885 */
+
+    /* RGB */
+    /* background-color: rgb(255, 97, 156); */
+
+    /* RGB COM TRANSPARÊNCIA */
+    background-color: rgba(227, 197, 207);
+
+}
+
+h1 {
+    color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 5vw;
+    font-family: "Playwrite DE SAS Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* Espaçamento entre as linhas */
+    line-height: 30px;
+}
+
+span {
+    font-size: 2em;
+    color: red;
+}
+
+/* --------------------------------------------------------- */
+/* PX (pixels) é uma unidade fixa. O tamanho sempre será o mesmo, independente do tamanho da tela. */
+
+/* 2EM - O dobro do tamanho padrão, significa que ele é o multiplicador do tamanho base */
+
+/* 120% - 20 maior que o padrão */
+
+/* 5vw - 5% da largura da tela / isso faz com que o tamanho do texto se ajuste ao tamanho da tela!, MUITO útil para design responsivo. */
+
+/* 
+Controla a grossura (negrito) do texto.
+100 = Super fino
+400 = Normal.
+700 = Negrito.
+900 = Super negrito.
+
+*/
+
+/* --------------------------------------------------------- */
