@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Entendo o Display</title>
+</head>
+<body>
 
+    <h1>Entendo o Display</h1>
+
+    <p>O<strong>display</strong> define como um elemento se comporta na página</p>
+
+    <!-- BLOCK -->
+     <h2>1. Block</h2>
+     <div class="block">Caixa1</div>
+     <div class="block">Caixa2</div>
+     <div class="block">Caixa3</div>
+
+    <!-- INLINE -->
+     <h2>2. Inline</h2>
+     <div class="inline">Caixa1</div>
+     <div class="inline">Caixa2</div>
+     <div class="inline">Caixa3</div>
+    
+    <!-- INLINE BLOCK -->
+     <h2>3. Inline Block</h2>
+     <div class="inline-block">Caixa1</div>
+     <div class="inline-block">Caixa2</div>
+     <div class="inline-block">Caixa3</div>
+    
+</body>
+</html>
